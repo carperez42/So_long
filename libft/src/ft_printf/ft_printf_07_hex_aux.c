@@ -61,7 +61,7 @@ static void	ft_hexa_converter(char *sDest, int nOri, t_set sSet)
 
 	ia = 0;
 	if (nOri != 0)
-	{	
+	{
 		while (ia < 8)
 		{
 			s_hex[7 - ia] = "0123456789abcdef"[nOri & 0xF];

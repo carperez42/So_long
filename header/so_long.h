@@ -6,7 +6,7 @@
 /*   By: carperez <carperez@student.45madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/27 18:33:36 by carperez          #+#    #+#             */
-/*   Updated: 2023/12/14 10:17:23 by carperez         ###   ########.fr       */
+/*   Updated: 2023/12/17 15:59:57 by carperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -113,6 +113,9 @@ typedef struct s_wall
 //f_status: vector of flags for enemy status
 //	[0]--> enemy's animation duration
 //	[1]--> enemy's activated animation
+//f_shift: vector of flags for enemy status
+//	[0]--> enemy's direction
+//	[1]--> enemy's orientation
 //rc: enemy's coordinates
 //	[0]--> row number
 //	[1]--> column number
@@ -123,13 +126,11 @@ typedef struct s_enemy
 	int		rc[2];
 }	t_enemy;
 //********************************
-//The s_enemy structure contains:
-//f_status: vector of flags for enemy status
-//	[0]--> enemy's animation duration
-//	[1]--> enemy's activated animation
-//rc: enemy's coordinates
-//	[0]--> row number
-//	[1]--> column number
+//The s_items structure contains:
+//n_player: number of players
+//n_enemy: number of enemies
+//n_exit: number of exits
+//n_reward: number of collectables
 typedef struct s_items
 {
 	int		n_player;

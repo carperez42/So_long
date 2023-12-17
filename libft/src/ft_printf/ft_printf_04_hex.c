@@ -22,7 +22,7 @@ static char	*ft_buffer_filler_1(char *sDest, char const *sOri, t_set sSet
 	if (!sSet.f_prefix[1] || (sSet.f_prefix[1] && !nCmp))
 	{
 		if (nCmp)
-		{	
+		{
 			if (sSet.l_arg > (int)ft_strlen(sOri))
 				ft_memcpy((sDest + sSet.l_arg - ft_strlen(sOri)),
 					sOri, ft_strlen(sOri));
@@ -64,7 +64,7 @@ static char	*ft_buffer_filler_2(char *sDest, char const *sOri, t_set sSet
 	else
 	{
 		if (nCmp != 0)
-		{		
+		{
 			ft_memset(sDest, '0', sSet.l_arg);
 			ft_hexa_prefix(sDest, sSet);
 			ft_memcpy(sDest + (sSet.l_arg + 2 - ft_strlen(sOri)), (sOri + 2),

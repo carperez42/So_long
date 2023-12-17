@@ -86,7 +86,7 @@ static char	*ft_buffer_sizer(char const *sOri1, char const *sOri2, t_set *pSet)
 	{
 		pSet->l_arg = ft_strlen(sOri1);
 		if (pSet->f_dot[1])
-		{		
+		{
 			if (pSet->l_arg > pSet->l_gap_2[1])
 				pSet->l_arg = pSet->l_gap_2[1];
 		}

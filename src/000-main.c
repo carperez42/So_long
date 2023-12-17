@@ -6,7 +6,7 @@
 /*   By: carperez <carperez@student.45madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/27 15:36:17 by carperez          #+#    #+#             */
-/*   Updated: 2023/12/14 10:17:06 by carperez         ###   ########.fr       */
+/*   Updated: 2023/12/17 15:52:58 by carperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,10 +83,7 @@ int	ft_game_exit(t_game *dGame)
 	if (dGame->p_map->m_map)
 		ft_map_liberator(dGame->p_map->m_map, dGame->p_map->m_rc[0]);
 	if (dGame->p_map->m_solution)
-	{
 		ft_map_liberator(dGame->p_map->m_solution, dGame->p_map->m_rc[0]);
-		ft_unload_images(dGame);
-	}
 	if (dGame->p_game)
 		mlx_destroy_window(dGame->p_game, dGame->p_win);
 	exit(EXIT_SUCCESS);

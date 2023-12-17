@@ -88,7 +88,7 @@ void	ft_set_capturer_2(char const *sToken, t_set *pSet)
 
 	ia = 1;
 	while (*(sToken + ia) != '\0')
-	{	
+	{
 		if (sToken[ia] == '#')
 		{
 			pSet->f_prefix[0] = ia;

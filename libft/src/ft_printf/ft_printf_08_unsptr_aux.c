@@ -79,7 +79,7 @@ static void	ft_ptr_converter(char *sDest, unsigned long long nOri)
 
 	ia = 0;
 	if (nOri != 0)
-	{	
+	{
 		while (ia < 16)
 		{
 			s_hex[15 - ia] = "0123456789abcdef"[nOri & 0xF];
