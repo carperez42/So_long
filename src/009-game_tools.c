@@ -6,7 +6,7 @@
 /*   By: carperez <carperez@student.45madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 10:28:18 by carperez          #+#    #+#             */
-/*   Updated: 2023/12/14 09:33:00 by carperez         ###   ########.fr       */
+/*   Updated: 2023/12/23 11:11:28 by carperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,7 +83,6 @@ int	ft_show_game(t_game *dGame)
 {
 	if ((dGame->d_exit.f_end == 1) || !(dGame->d_exit.f_end))
 	{
-		usleep(140000);
 		mlx_clear_window(dGame->p_game, dGame->p_win);
 		if (!(dGame->f_pause))
 		{
